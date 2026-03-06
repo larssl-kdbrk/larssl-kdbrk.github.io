@@ -8,6 +8,14 @@
 </ul>
 
 <h2>2. In-depth Analysis</h2>
+There's a couple of different areas of interest here:
+<ol>
+<li>How well do the future simulations match the actual historical returns?</li>
+<li>Is one model consistently generating significantly different future simulations (the real-world implications of this is clear - the savings goal feasibilities would see marked differences)</li>
+<li>How well do the historical simulations match the actual historical returns?</li>
+</ol>
+In summary, we don't see huge differences on point 1 between the 2 series (more details on the US IG case <a href="https://larssl-kdbrk.github.io/friction_vs_default_vs_actual_ig_bonds-protected.html" target="_blank">here</a>)
+We first compare the statistical properties of the simulations using a frictional cost vs a default-based credit model. Then we look at the historical returns, and how well the historical simulations match the actual historical data.
 <h3>2.1 Feasibility in general much higher with frictional-based</h3>
 <h4>2.1.1 US HY 60 Bonds using frictional model (a) vs default-based (b).</h4>
 We can see that for many of the horizons, there's borderline first-order stochastic dominance (fsd in the table). 
@@ -483,6 +491,7 @@ We can see that for many of the horizons, there's borderline first-order stochas
   </tbody>
 </table>
 <h4>2.1.2 US IG Bonds 60</h4>
+The case here is even more striking - for a majority of the horizons we see first-order stochastic dominance for the frictional cost vs the default-based model.
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
