@@ -1,15 +1,15 @@
 <html>
 
 <h1>Investigation of Frictional cost vs default-based model</h1>
-<h2>Main concerns</h2>
+<h2>1. Main concerns</h2>
 <ul>
 <li>Negative Scenarios: For 3 (out of 5k) scenarios, we're seeing negative total returns with the new frictional cost model. No such occurences with the default-based model</li>
 <li>Large differences in feasibility: the returns of the frictional cost model are significantly higher than the default-based model (the variance is pretty much the same).</li>
 </ul>
 
-<h2>In-depth Analysis</h2>
-<h3>Feasibility much higher with frictional-based, US HY 60 Bonds as example</h3>
-<h4>US HY 60 Bonds using frictional model (a) vs default-based (b).</h4>
+<h2>2. In-depth Analysis</h2>
+<h3>2.1 Feasibility in general much higher with frictional-based</h3>
+<h4>2.1.1 US HY 60 Bonds using frictional model (a) vs default-based (b).</h4>
 We can see that for many of the horizons, there's borderline first-order stochastic dominance. 
 <table border="1" class="dataframe">
   <thead>
@@ -482,7 +482,7 @@ We can see that for many of the horizons, there's borderline first-order stochas
     </tr>
   </tbody>
 </table>
-<h3>Historical Returns Comparison</h3>
+<h3>2.2 Historical Returns Comparison</h3>
 
 We simulate our historical bond returns, but for IG and HY we also have the actual historical time series. There's no clear info on what the average term is for the actual total return series, but we choose to compare them to our 60m series here. If say the frictional model gave
 results much closer to the historical data than the default-based model, this would be one weighty argument for switching models, but we don't see any indications of this.
